@@ -1,0 +1,84 @@
+name,notes
+rhgldb:IGHV1-Korf4,2 nt too short
+rhgldb:IGHV1-AFG*01_S1231,2 nt too short
+rhgldb:IGHV1-AAU*02,2 nt too short
+rhgldb:IGHV1-AAU*02_S4606,3 nt too short
+rhgldb:IGHV1-Kc,2 nt too short
+rhgldb:IGHV1-Kc_S0780,2 nt too short
+rhgldb:IGHV1-Kc_S5608,3 nt too short
+rhgldb:IGHV1-Korf5,2 nt too short
+rhgldb:IGHV1-ABW*01_S8043,1 nt too long
+rhgldb:IGHV2-ABG*02_S2032,4 nt too short
+rhgldb:IGHV2-Korf1, 4 nt too short
+rhgldb:IGHV4-Korf4_S3924,2 nt too short
+rhgldb:IGHV4-AGU*01_S9534,2 nt too long
+rhgldb:IGHV4-AEB*01,2 nt too short
+rhgldb:LJI.Rh_IGHV4.149_S3986,2 nt too short
+rhgldb:IGHV4-ADD*01_S4368,1 nt too short
+rhgldb:IGHV4-Korf3,2 nt too short
+rhgldb:IGHV3-Korf10,2 nt too short
+rhgldb:IGHV3-Korf10_S4460,2 nt too short
+rhgldb:IGHV3-Korf20,2 nt too short
+rhgldb:LJI.Rh_IGHV3.141,1 nt deletion
+rhgldb:LJI.Rh_IGHV3.94_S9299,1 nt too long
+kimdb:IGHV3-5*01_S6059,2 nt too long
+rhgldb:IGHV3-Korf9,6 nt too short
+kimdb:IGHV3-NL_8*01_S7474,2 nt too long
+rhgldb:IGHV3-ADR*01_S0476,1 nt too short
+rhgldb:IGHV3-KSeq13,2 nt too short
+rhgldb:IGHV3-KSeq13_S1144,2 nt too short
+rhgldb:IGHV3-AEH*01_S3262,1 nt too short
+rhgldb:IGHV3-KSeq25,2 nt too short
+kimdb:IGHV3-9*02,2 nt too short
+rhgldb:IGHV3-Korf21_S7413,2 nt too short
+rhgldb:IGHV1-AAU*01_S8392,nothing close on genome or IMGT
+rhgldb:IGHV1-Kc_S1701,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV6.1_S5740,nothing close on genome or IMGT
+rhgldb:IGHV2-ABG*02_S8286,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV4.149.a,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV4.61.2,nothing close on genome or IMGT
+rhgldb:IGHV4-AEX*01_S0536,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV3.127_S8851,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV3.87_S4888,nothing close on genome or IMGT
+rhgldb:IGHV3-Korf10_S2622,nothing close on genome or IMGT
+rhgldb:IGHV3-ADN*01_S0431,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV3.141.a_S8885,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV3.141.a_S4612,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV3.36.a,nothing close on genome or IMGT
+rhgldb:IGHV3-KSeq25_S3901,nothing close on genome or IMGT
+rhgldb:IGHV3-AHH*01,nothing close on genome or IMGT
+rhgldb:IGHV3-ABY*03,nothing close on genome or IMGT
+rhgldb:LJI.Rh_IGHV3.128_S4519,nothing close on genome or IMGT
+rhgldb:IGHV3-ADW*02,external cluster
+rhgldb:IGHV3-ADW*01,external cluster: IGHV3S40*01 F pseudogene on chromosome 1
+rhgldb:IGHV3-ADW*03,external cluster
+rhgldb:IGHV5-I1,external cluster ................IGHV5-189*02 P
+rhgldb:LJI.Rh_IGHV5.131.a,external cluster
+rhgldb:LJI.Rh_IGHV5.157.a_S8313,external cluster
+rhgldb:IGHV5-ABI*01_S9591,external cluster
+rhgldb:IGHV5-ABI*03,external cluster
+rhgldb:LJI.Rh_IGHV2.7.a,external cluster
+rhgldb:IGHV2-S3,external cluster ...........IGHV2-10*01 ORF
+rhgldb:IGHV2-AEI*01,external cluster 
+rhgldb:LJI.Rh_IGHV3.8,external cluster close to IGHV3-116*01 F pseudogene?
+rhgldb:IGHV3-AHG*01,external cluster
+rhgldb:IGHV3-ADU*02,external cluster
+rhgldb:IGHV3-ADU*01,external cluster
+rhgldb:IGHV3-AFY*10,external cluster (3-100 -updated in KIMDB version 2 to remove 5' extension)
+rhgldb:IGHV3-AFY*01,external cluster: IGHV3-132*02 F
+rhgldb:IGHV3-AFY*02,external cluster
+rhgldb:LJI.Rh_IGHV3.107.a,external cluster IGHV3-162*02 P
+rhgldb:LJI.Rh_IGHV3.5_S7378,external cluster
+rhgldb:LJI.Rh_IGHV3.195,external cluster
+rhgldb:IGHV3-AHA*01,external cluster 
+rhgldb:LJI.Rh_IGHV3.195,external cluster ô˜ORF
+rhgldb:IGHV3-AHA*01,external cluster
+rhgldb:IGHV3-S49,external cluster  IGHV3-35*02 F pseudogene?
+rhgldb:LJI.Rh_IGHV3.35.a,external cluster
+rhgldb:IGHV3-AGV*02,external cluster
+rhgldb:IGHV3-AGV*03,external cluster IGHV3-35*01 F 
+rhgldb:IGHV3-ABH*01,external cluster
+rhgldb:IGHV3-ADU*03,external cluster close to IGHV3-12*02 F pseudogene?
+rhgldb:LJI.Rh_IGHV3.8.a,external cluster
+rhgldb:LJI.Rh_IGHV3.185.a,external cluster IGHV3-18*01 ORF
+rhgldb:IGHV3-ABH*02,external cluster IGHV3-18*01 ORF
