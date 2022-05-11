@@ -169,9 +169,9 @@ with open('macaca_mulatta_db.csv', 'r') as db, open('rhesus_consolidated.csv', '
                     names.append(entry['Gene Name'])
                     alt_names.append('kimdb:' + entry['Gene Name'])
                     add_name_and_type(rec, row['label'], entry['Type'])
+                    rearranged = True
                     if entry['Gene Name'] in kimdb_accessions['inferred']:
                         genbanks.append(kimdb_accessions['inferred'][entry['Gene Name']])
-                        rearranged = True
                     if entry['Gene Name'] in kimdb_accessions['sanger']:
                         genbanks.append(kimdb_accessions['sanger'][entry['Gene Name']])
                         unrearranged = True
@@ -219,9 +219,9 @@ with open('macaca_mulatta_db.csv', 'r') as db, open('rhesus_consolidated.csv', '
 
             if rearranged and unrearranged:
                 rec['inference_type'] = 'Both'
-            if rearranged:
+            elif rearranged:
                 rec['inference_type'] = 'Rearranged'
-            if unrearranged:
+            elif unrearranged:
                 rec['inference_type'] = 'Unrearranged'
 
             rec['alt_names'] = ','.join(alt_names)
