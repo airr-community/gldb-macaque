@@ -52,6 +52,7 @@ for name, seq in genes.items():
 imgt_v_gapped = simple.read_fasta('../imgt_feb_2021/Macaca_mulatta_IGHV_gapped.fasta')
 imgt_v_ungapped = simple.read_fasta('../imgt_feb_2021/Macaca_mulatta_IGHV.fasta')
 
+imgt_functional_only = {v: k for k,v in simple.read_fasta('../imgt/Macaca_mulatta_IGH_29_apr_2022_Functional.fasta').items()}
 
 # The mass change of IMGT IGHV names was announced on 4 September 2020
 
@@ -130,13 +131,35 @@ def read_imgt():
                 consolidated_name = name
             else:
                 consolidated_name = name + ' (' + ', '.join(qualifiers) + ')'
+
             consolidated_names.append(consolidated_name)
 
         ret[seq]['Gene Name'] = ', '.join(consolidated_names)
+        if seq not in imgt_functional_only:
+            ret[seq]['Gene Name'] += ' (P)'
 
     return ret
 
 imgt = read_imgt()
+
+cottrell_curated_file = '../cottrell_et_al/rhesus_consolidated_edit_20220512_corrected_names.csv'
+cottrell_curated = {}
+curated_v_recs = 0
+
+with open(cottrell_curated_file, 'r') as fi:
+    reader = csv.DictReader(fi)
+    for row in reader:
+        row['sequence'] = row['sequence'].upper()
+        row['sequence_gapped'] = row['sequence_gapped'].upper()
+        if row['sequence'] not in cottrell_curated:
+            cottrell_curated[row['sequence']] = row
+            if row['type'] == 'IGHV':
+                curated_v_recs += 1
+        elif len(row['sequence']):
+            print(f"duplicated sequence in {cottrell_curated_file}: {row['sequence']}")
+    cottrell_curated_headers = reader.fieldnames
+
+print(f"Number of curated v_records: {curated_v_recs}")
 
 def add_name_and_type(rec, label, type):
     if rec['type'] is None:
@@ -145,8 +168,15 @@ def add_name_and_type(rec, label, type):
     return
 
 all_pubids = []
+gene_set_labels = {}
+curated_sequences = {}
 
-headers = ['gene_label', 'type', 'functional', 'inference_type', 'species_subgroup', 'subgroup_type', 'kimdb', 'rhgldb', 'imgt', 'pubid', 'genbank', 'alt_names', 'notes', 'sequence', 'sequence_gapped']
+headers = ['gene_label', 'type', 'functional', 'include_in_set', 'inference_type', 'species_subgroup', 'subgroup_type', 'kimdb', 'rhgldb', 'imgt', 'pubid', 'genbank', 'alt_names', 'notes', 'sequence', 'sequence_gapped']
+cottrell_curated_headers = ['CL_rhgldb', 'dataset_count', 'total_VDJs', 'curation_notes']
+headers = headers[:3] + cottrell_curated_headers + headers[3:]
+
+consolidated_rows = []
+curated_rows_added = 0
 
 with open('macaca_mulatta_db.csv', 'r') as db, open('rhesus_consolidated.csv', 'w', newline='') as fo:
     reader = csv.DictReader(db)
@@ -225,7 +255,45 @@ with open('macaca_mulatta_db.csv', 'r') as db, open('rhesus_consolidated.csv', '
                 rec['inference_type'] = 'Unrearranged'
 
             rec['alt_names'] = ','.join(alt_names)
-            writer.writerow(rec)
+
+            if rec['gene_label']:
+                if rec['type'] == 'IGHV':
+                    if rec['sequence'] in cottrell_curated:
+                        rec['include_in_set'] = 'Y'
+                        curated_rows_added += 1
+                        for el in cottrell_curated_headers:
+                            rec[el] = cottrell_curated[rec['sequence']][el]
+                    else:
+                        rec['include_in_set'] = 'N'
+
+                if 'include_in_set' in rec and rec['include_in_set'] == 'Y':
+                    if rec['gene_label'] not in gene_set_labels:
+                        gene_set_labels[rec['gene_label']] = 0
+                    gene_set_labels[rec['gene_label']] += 1
+
+
+                if rec['sequence'] not in curated_sequences:
+                    curated_sequences[rec['sequence']] = 0
+                curated_sequences[rec['sequence']] += 1
+
+                consolidated_rows.append(rec)
+            else:
+                print('Orphan record: %s' % rec)
+
+    print(f"Number of curated V records added: {curated_rows_added}")
+
+    for row in consolidated_rows:
+        if row['gene_label'] in gene_set_labels and gene_set_labels[row['gene_label']] > 1:
+            cn = row['curation_notes'].split(', ')
+            cn.append('duplicated label in set')
+            row['curation_notes'] = ', '.join(cn)
+            print(f"Label is present more than once in gene set: {row['gene_label']}")
+        if curated_sequences[row['sequence']] > 1:
+            cn = row['curation_notes'].split(', ')
+            cn.append('sequence has >1 label')
+            row['curation_notes'] = ', '.join(cn)
+            print(f"Sequence has more than one label: {row['sequence']}")
+        writer.writerow(row)
 
     if notfound > 0:
         print('%d sequences in macaca_mulatta_db.csv were not found in rhesus_consolidated.csv' % notfound)
@@ -238,6 +306,10 @@ with open('macaca_mulatta_db.csv', 'r') as db, open('rhesus_consolidated.csv', '
 
         if len(notused):
             print('Unused notes for %s: %s' % (db_name, ', '.join(notused)))
+
+    for row in cottrell_curated.values():
+        if row['type'] == 'IGHV' and row['gene_label'] not in gene_set_labels:
+            print(f"curated label not added: {row['gene_label']}: {row['sequence']}")
 
 #all_pubids = list(set(all_pubids))
 #for pub in all_pubids:

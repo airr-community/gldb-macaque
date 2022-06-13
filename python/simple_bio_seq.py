@@ -34,7 +34,7 @@ def read_single_fasta(infile):
 # read V,D,J regions from one or more species from an IMGT reference file
 # species should be a ***list*** of species
 # returns a nested dict: [species][chain]
-def read_imgt_fasta(infile, species, chains=['IGHV', 'IGHD', 'IGHJ']):
+def read_imgt_fasta(infile, species, chains=['IGHV', 'IGHD', 'IGHJ'], functional_only=False):
     res = {}
     for sp in species:
         res[sp] = {}
@@ -47,9 +47,10 @@ def read_imgt_fasta(infile, species, chains=['IGHV', 'IGHD', 'IGHJ']):
         for sp in species:
             for chain in chains:
                 if '-REGION' in rec.description and sp in rec.description and chain in rec.description:
-                    if 'V' not in chain or len(rec.seq) > 280:       # strip out obviously incomplete Vs
-                        name = rec.description.split('|')[1]
-                        res[sp][chain][name] = str(rec.seq).upper()
+                    if not functional_only or '|F|' in rec.description:
+                        if 'V' not in chain or len(rec.seq) > 280:       # strip out obviously incomplete Vs
+                            name = rec.description.split('|')[1]
+                            res[sp][chain][name] = str(rec.seq).upper()
     return res
 
 
