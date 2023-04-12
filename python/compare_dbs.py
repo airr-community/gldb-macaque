@@ -3,15 +3,16 @@
 import argparse
 from receptor_utils import simple_bio_seq as simple
 
-parser = argparse.ArgumentParser(description='Extract reference files for nominated species')
-parser.add_argument('db1', help='gapped imgt reference file')
-parser.add_argument('db2', help='species name for IMGT file, e.g. Homo sapiens, Macaca mulatta')
+parser = argparse.ArgumentParser(description='Compare two iglabel dbs')
+parser.add_argument('db1')
+parser.add_argument('db2')
 args = parser.parse_args()
 
 db1 = simple.read_csv(args.db1)
 db2 = simple.read_csv(args.db2)
 #simple.write_csv('unspaced'+args.db2, db2)
 
+new_seqs = {}
 
 # make a sequence db and check that sequences are unique
 
@@ -45,5 +46,12 @@ for seq1, labels1 in db1_seqs.items():
 for seq2, labels2 in db2_seqs.items():
     if seq2 not in db1_seqs:
         print(f"seq in db2 with labels {', '.join(labels2)} is not in db1")
+
+    for label in labels2:
+        if '_S' in label:
+            new_seqs[label] = seq2
+
+simple.write_fasta(new_seqs, 'db2_new_seqs.fasta')
+
 
 
