@@ -1,0 +1,44 @@
+Update to KIMDB 1.1
+March 17, 2022, 2:14 p.m.
+
+    Removed 6 nucleotide 5’ end prefix from all alleles of IGHV3-100 as this was part of the leader
+    Removed 3’ RSS signal sequence from alleles of IGHD3-15, IGHD3-16 and IGHD3-18
+    Added 13 novel IGHV alleles from animal D20 (Library reads from ERR2856338): IGHV1-NL_1*01_S2608, IGHV2-NL_1*01_S0252, IGHV3-143*01_S8819, IGHV3-36*01_S4906, IGHV3-5*01_S6435, IGHV3-NL_1*01_S7175, IGHV3-NL_14*01_S0414, IGHV3-NL_18*01_S1419, IGHV4-149*01_S2329, IGHV4-174*02_S2437, IGHV4-NL_12*01_S2985, IGHV4-NL_27*01_S7628, IGHV4-NL_36*01_S0326
+
+(digby39) D:\Research\gldb-macaque\macaca_mulatta\db>python ../../../iglabel/iglabel.py query macaca_mulatta_db.csv ../kimdb_v1.1/new_3_100.fasta ../kimdb_v1.1/new_3_100.results.csv ../kimdb_v1.1/new_3_100.actions.csv
+Querying database "macaca_mulatta_db.csv" for sequences in "../kimdb_v1.1/new_3_100.fasta"
+
+(digby39) D:\Research\gldb-macaque\macaca_mulatta\db>python ../../../iglabel/iglabel.py add macaca_mulatta_db.csv ../kimdb_v1.1/new_3_100.actions.csv "bernat et al. kimdb v1.1"
+Database written to macaca_mulatta_db.csv. Previous version saved as macaca_mulatta_db_old.csv
+
+seq_id	match	matched_label
+IGHV3-100*01	query_is_existing_sub	3UBQ
+IGHV3-100*01_S2822	query_is_new_sub	B3XO
+IGHV3-100*01_S4205	query_is_existing_sub	XGQN
+IGHV3-100*01_S4375	query_is_existing_sub	RTK4
+IGHV3-100*02_S9884	query_is_new_sub	MATZ
+
+python ../../../iglabel/iglabel.py query macaca_mulatta_db.csv ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_V_1-1.fasta ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_V_1-1.results.csv ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_V_1-1.actions.csv
+
+All sequences (including the 13 novel alleles) are already exactly matched in the database.
+
+python ../../../iglabel/iglabel.py query macaca_mulatta_db.csv ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_D_1-1.fasta ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_D_1-1.results.csv ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_D_1-1.actions.csv
+
+IGHD3-15*01	query_is_existing_sub	PSVV
+IGHD3-16*01	query_is_existing_sub	IQ3M
+IGHD3-18*01	query_is_new_sub	E4WX
+IGHD5-28*01	query_is_existing_sub	SIXJ
+
+
+python ../../../iglabel/iglabel.py query macaca_mulatta_db.csv ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_J_1-1.fasta ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_J_1-1.results.csv ../kimdb_v1.1/Macaca-mulatta_Ig_Heavy_J_1-1.actions.csv
+
+..no changes
+
+Update to rhesus_consolidated:
+- changed kimdb column to kimdb v1.1
+3UBQ,XGQN,RTK4 - assigned kimdb name to shorter sequence, marked this one as functional and include
+B3XO,MATZ - created new entries for shorter sequence, marked this one as functional and include
+
+PSVV, IQ3M - changed kimdb name to revised existing sequence
+SIXJ - rhesus_consolidated already reflected the kimdbv1.1 sequence: no changes made
+E4WX - added new sequence and assigned kimdb name
