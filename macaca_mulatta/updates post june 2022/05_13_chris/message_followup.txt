@@ -1,0 +1,226 @@
+Hi Mats, 
+
+Those sequences appear to fall into 3 categories. (1) Functional IMGT sequences that are include in the sheet I sent out but with a different names (i.e. IGHV-10XX). (2) Inferred alleles from RhGLDB that were only detected in one animal which I removed because there is a high chance those are false positives and because many of them were flagged in Martin’s analysis. (3) IMGT pseudogenes.
+
+I used William’s database from March as a starting point. That database did not contain the all of the IMGT functional genes or any of the IMGT pseudogenes. When I added the functional IMGT sequences, I gave them unique IDs starting at 1000. Those should be eventually changed to William’s temp labels. 
+
+Once we have settled on an initial reference database, I can go back to the NGS datasets looking for new inferred alleles using IgDiscover. If any of the sequences from RhGLDB that were discarded are real, I should find them when I run IgDiscover looking for new alleles. 
+
+I don’t think the IMGT pseudogenes should be included.     
+
+Best,
+Chris
+
+
+On May 13, 2022, at 1:51 AM, Mats Ohlin <mats.ohlin@immun.lth.se> wrote:
+
+Hi Chris and William!
+
+In addition to 4 alleles that were removed there are a set of additional alleles in Williams most resent set (at the very end of the list) that are not among your sequences (these additional sequences are listed below). How are these to be treated? Is there some specific reason they are not in your reference set?
+
+
+Best wishes,
+
+Mats
+
+
+IGHV-ITMB
+IGHV-QMQH
+IGHV-7IMY
+IGHV-3USN
+IGHV-66JE
+IGHV-MKBY
+IGHV-LIP6
+IGHV-FXVU
+IGHV-DTFN
+IGHV-Y2HI
+IGHV-CKZQ
+IGHV-6GXS
+IGHV-DYJZ
+IGHV-VJUN
+IGHV-5K3I
+IGHV-KDRG
+IGHV-4KWQ
+IGHV-2WCR
+IGHV-S7NI
+IGHV-6GV4
+IGHV-2QBF
+IGHV-MB4C
+IGHV-GU4C
+IGHV-YQBA
+IGHV-QQ2B
+IGHV-ANBP
+IGHV-RHMU
+IGHV-G5CK
+IGHV-UGYI
+IGHV-QYMF
+IGHV-4TVY
+IGHV-R4CN
+IGHV-KFRN
+IGHV-4QUQ
+IGHV-SB6C
+IGHV-H3LI
+IGHV-TMNM
+IGHV-VHY5
+IGHV-SMZZ
+IGHV-FVXJ
+IGHV-YGKZ
+IGHV-IYFS
+IGHV-3F3I
+IGHV-2CYH
+IGHV-4U52
+IGHV-562C
+IGHV-E7A5
+IGHV-JHTF
+IGHV-2VSG
+IGHV-A4TG
+IGHV-RMV3
+IGHV-CY6E
+IGHV-RQUU
+IGHV-INIF
+IGHV-LZFA
+IGHV-WOLF
+IGHV-LJSA
+IGHV-BYYU
+IGHV-FUPC
+IGHV-URVJ
+IGHV-44TJ
+IGHV-ZOTG
+IGHV-2HUL
+IGHV-3GFX
+IGHV-4E44
+IGHV-N43O
+IGHV-CVUM
+IGHV-O4D7
+IGHV-N2B2
+IGHV-IC6B
+IGHV-PMD4
+IGHV-DWH7
+IGHV-BXBK
+IGHV-5Y2T
+IGHV-IMYF
+IGHV-GYPG
+IGHV-GYPG
+IGHV-E7U4
+IGHV-DVKQ
+IGHV-B75G
+IGHV-2ZSS
+IGHV-XSLU
+IGHV-DGS3
+IGHV-BPKE
+IGHV-4E6E
+IGHV-KXWE
+IGHV-BJ5N
+IGHV-H4YG
+IGHV-6KWK
+IGHV-T5N4
+IGHV-EPNS
+IGHV-3Z3W
+IGHV-IM4K
+IGHV-C65R
+IGHV-PNZH
+IGHV-XTFD
+IGHV-QNWQ
+IGHV-ADQC
+IGHV-AMBY
+IGHV-BR5T
+IGHV-ZR2U
+IGHV-TRJ6
+IGHV-4B2U
+IGHV-OZKP
+IGHV-KSHY
+IGHV-5KIN
+IGHV-XJN7
+IGHV-7HCW
+IGHV-G537
+IGHV-NEPN
+IGHV-B5E7
+IGHV-ZDOM
+IGHV-55J2
+IGHV-KS54
+IGHV-MFHR
+IGHV-WPIB
+IGHV-OM54
+IGHV-BMDP
+IGHV-XVB6
+IGHV-A457
+IGHV-O76Z
+IGHV-4V64
+IGHV-7GX6
+IGHV-CIGX
+IGHV-7U4O
+IGHV-4XGY
+IGHV-ON5C
+IGHV-D3PW
+IGHV-NGJA
+IGHV-YNXN
+IGHV-F4DW
+IGHV-TGVF
+IGHV-RS2U
+IGHV-2VUE
+IGHV-3EVJ
+IGHV-RL4Z
+IGHV-4BGY
+IGHV-63TV
+IGHV-5XGJ
+IGHV-L7TZ
+IGHV-7BJU
+IGHV-LHCC
+IGHV-UF2I
+IGHV-OOBB
+IGHV-7ARY
+IGHV-EOMU
+IGHV-BCBK
+IGHV-2ZSG
+IGHV-CQAI
+IGHV-4KAP
+IGHV-NZUD
+IGHV-DPAM
+IGHV-MOJC
+IGHV-KF3A
+IGHV-6A75
+IGHV-J3W6
+IGHV-B3M4
+IGHV-HDNU
+IGHV-DHLN
+
+
+________________________________________
+From: Christopher Cottrell <cchris@scripps.edu>
+Sent: Friday, May 13, 2022 1:36:45 AM
+To: William Lees
+Cc: Gur Yaari; victor.greiff@medisin.uio.no; lonnekes@student.matnat.uio.no; christian.busse@dkfz-heidelberg.de; k.jackson@garvan.org.au; Mats Ohlin; ivana.mikocziova@medisin.uio.no; Kos, Justin; breden@sfu.ca; a.collins@unsw.edu.au; amikt.gilboa@biu.ac.il; sofia.kossida@igh.cnrs.fr; veronique.giudicelli@igh.cnrs.fr; chaim.schramm@nih.gov; aupadh4@emory.edu; steven.bosinger@emory.edu; martin.corcoran@ki.se; Gibson, William; Upadhyay, Amit A.; gyaari@gmail.com; Smith,Melissa Laird; Jana,Uddalok; Saha,Swati; Rodriguez,Oscar; Gunilla Karlsson Hedestam
+Subject: Re: Rhesus Macaque GLDB 
+ 
+Hello All,
+
+Attached are the updated rhesus_consolidated database and an updated summary slide after adding the additional 75 datasets from Zhang et al 2019. 
+
+total_VDJs = number of times that gene/allele was detected across all the datasets
+dataset_count = number of datasets a gene/allele was detected in
+
+There are 56 genes/alleles that have no expression data. This decreased slightly from the 64 genes/alleles that were lacking expression data before adding the 75 datasets from Zhang et al 2019 indicating that as more data is added some of these may turn out to be functional. 
+
+Please let me know if you have any questions.
+
+
+William, 
+
+The added IMGT sequences were given unique IDs spanning 1000 through 1035 and the added KIMDBv1.1 sequences were given unique IDs spanning 2002 through 2013.
+
+Would it be possible to incorporate the gene family number in the temp labels (e.g. IGHV-CDB4 to IGHV3-CDB4)? Some tools require the gene family number. 
+
+Best,
+Chris
+
+
+
+On May 12, 2022, at 4:53 AM, William Lees <william@lees.org.uk> wrote:
+
+Apologies, Chris pointed out that I was missing a number of IMGT sequences that were not in kimdb or rhgldb and I realized that I had not assigned labels to all the IMGT sequences. 
+
+This version has the complete IMGT set. It lists 35 functional V sequences and 6 Ds which are in IMGT but not in the other two databases.
+
+Talk to you soon
+ 
+William

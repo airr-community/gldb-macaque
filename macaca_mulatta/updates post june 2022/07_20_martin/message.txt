@@ -1,0 +1,41 @@
+3UBQ
+B3XO
+XGQN
+RTK4
+MATZ
+These are the 3-100 allelic variants that have the leader issue in KIMDB version 1 but are resolved in version 2, so I think these are most of the ones on your list, Mats.
+We should check the other two also, thanks for pointing those out.
+Martin
+
+Get Outlook for iOS
+________________________________________
+From: Mats Ohlin <mats.ohlin@immun.lth.se>
+Sent: Wednesday, July 20, 2022 8:12:49 PM
+To: Christopher Cottrell <cchris@scripps.edu>; William Lees <william@lees.org.uk>; corey.watson@louisville.edu <corey.watson@louisville.edu>; Martin Corcoran <martin.corcoran@ki.se>
+Subject: Re: Rhesus Macaque GLDB 
+ 
+Hi!
+
+I don't know if you already fixed this but a couple of genes that were in the file that was circulated by mail in May seems to carry a few bases from the leader sequences. These are IGHV-CDB4, IGHV-DCTO, IGHV-YXFU, IGHV-B3XO, IGHV-MATZ, IGHV-XGQN, IGHV-3UBQ, IGHV-RTK4. If already addressed, just ignore this message.
+
+
+Best wishes,
+
+Mats
+________________________________________
+From: Christopher Cottrell <cchris@scripps.edu>
+Sent: Friday, May 13, 2022 1:36:45 AM
+To: William Lees
+Cc: Gur Yaari; victor.greiff@medisin.uio.no; lonnekes@student.matnat.uio.no; christian.busse@dkfz-heidelberg.de; k.jackson@garvan.org.au; Mats Ohlin; ivana.mikocziova@medisin.uio.no; Kos, Justin; breden@sfu.ca; a.collins@unsw.edu.au; amikt.gilboa@biu.ac.il; sofia.kossida@igh.cnrs.fr; veronique.giudicelli@igh.cnrs.fr; chaim.schramm@nih.gov; aupadh4@emory.edu; steven.bosinger@emory.edu; martin.corcoran@ki.se; Gibson, William; Upadhyay, Amit A.; gyaari@gmail.com; Smith,Melissa Laird; Jana,Uddalok; Saha,Swati; Rodriguez,Oscar; Gunilla Karlsson Hedestam
+Subject: Re: Rhesus Macaque GLDB 
+ 
+Hello All,
+
+Attached are the updated rhesus_consolidated database and an updated summary slide after adding the additional 75 datasets from Zhang et al 2019. 
+
+total_VDJs = number of times that gene/allele was detected across all the datasets
+dataset_count = number of datasets a gene/allele was detected in
+
+There are 56 genes/alleles that have no expression data. This decreased slightly from the 64 genes/alleles that were lacking expression data before adding the 75 datasets from Zhang et al 2019 indicating that as more data is added some of these may turn out to be functional. 
+
+Please let me know if you have any questions.

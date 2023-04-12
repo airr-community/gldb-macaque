@@ -1,0 +1,15 @@
+Hi All, 
+
+Attached is an updated VH database with the error corrections identified by Mats and Martin and additional curation notes. Only entries with "include_in_set” = Y should be in the final database.  
+
+A summary of the results for IgDiscover with inference is also attached.
+
+Of the 137 new VH genes/alleles that were detected in more than one dataset, 45 were confidently detected in more than one animal.
+Of those 45, 12 were 3-prime variants and were not included in final database, 1 was identical to a corrected version of IGHV-D56D (duplicate was dropped from final database), and 6 were identical to entries from the KIMDB macaca fascicularis DB (included in final database).
+
+The 992 new VH genes/alleles were detected in only one dataset were probably false positives due in some degree to issue Martin noted in the readme Google doc. Should those be investigated further?  
+
+Let me know if there are any questions.
+
+Best,
+Chris

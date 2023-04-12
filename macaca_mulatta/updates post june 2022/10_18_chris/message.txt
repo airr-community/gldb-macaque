@@ -1,0 +1,28 @@
+Hi Corey, Wiliam, and Martin, 
+
+Yes, I have the results from running the new version of IgDiscover on the datasets from Vazquez Bernat et al.
+
+The attached fasta file has all of the newly inferred alleles from that run. I am not sure the best way to compare my results with what Martin got. 
+
+Martin, is there additional data you need for the comparison?
+
+Yes, I have the IGL and IGK databases to introduce and discuss. 
+
+Best,
+Chris   
+
+
+
+
+
+On Oct 18, 2022, at 7:24 AM, Watson,Corey T <corey.watson@louisville.edu> wrote:
+
+Hey Martin and Chris, 
+
+I hope you are both well. William and I were just discussing agenda items for tomorrow monkey GLDB call.
+ 
+Wanted to check in with you both that you are 1) able to attend, and 2) willing to share any updates you have (Martin/Chris: update on IgDiscover IGHV results; & Chris: new data on IGKV, IGLV data). If you have a sec to confirm with us, would be great! Just want to avoid throwing you in front of the bus, if you aren’t ready😊
+ 
+THANKS!
+Corey and William
+

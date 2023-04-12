@@ -1,0 +1,23 @@
+Hello All,
+
+Attached are the updated rhesus_consolidated database and an updated summary slide after adding the additional 75 datasets from Zhang et al 2019. 
+
+total_VDJs = number of times that gene/allele was detected across all the datasets
+dataset_count = number of datasets a gene/allele was detected in
+
+There are 56 genes/alleles that have no expression data. This decreased slightly from the 64 genes/alleles that were lacking expression data before adding the 75 datasets from Zhang et al 2019 indicating that as more data is added some of these may turn out to be functional. 
+
+Please let me know if you have any questions.
+
+
+William, 
+
+The added IMGT sequences were given unique IDs spanning 1000 through 1035 and the added KIMDBv1.1 sequences were given unique IDs spanning 2002 through 2013.
+
+Would it be possible to incorporate the gene family number in the temp labels (e.g. IGHV-CDB4 to IGHV3-CDB4)? Some tools require the gene family number. 
+
+Best,
+Chris
+
+
+

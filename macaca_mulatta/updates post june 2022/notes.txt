@@ -1,0 +1,61 @@
+comparing 07_25_chris with 06_13_william:
+
+notes from Mats and Martin:
+
+-----------------
+3UBQ
+B3XO
+XGQN
+RTK4
+MATZ
+These are the 3-100 allelic variants that have the leader issue in KIMDB version 1 but are resolved in version 2, so I think these are most of the ones on your list, Mats.
+We should check the other two also, thanks for pointing those out.
+Martin
+
+Get Outlook for iOS
+________________________________________
+From: Mats Ohlin <mats.ohlin@immun.lth.se>
+Sent: Wednesday, July 20, 2022 8:12:49 PM
+To: Christopher Cottrell <cchris@scripps.edu>; William Lees <william@lees.org.uk>; corey.watson@louisville.edu <corey.watson@louisville.edu>; Martin Corcoran <martin.corcoran@ki.se>
+Subject: Re: Rhesus Macaque GLDB 
+ 
+Hi!
+
+I don't know if you already fixed this but a couple of genes that were in the file that was circulated by mail in May seems to carry a few bases from the leader sequences. These are IGHV-CDB4, IGHV-DCTO, IGHV-YXFU, IGHV-B3XO, IGHV-MATZ, IGHV-XGQN, IGHV-3UBQ, IGHV-RTK4. If already addressed, just ignore this message.
+---------------------
+
+the following fixed by kimdb updates:
+seq_id	match	matched_label
+IGHV3-100*01	query_is_existing_sub	3UBQ
+IGHV3-100*01_S2822	query_is_new_sub	B3XO
+IGHV3-100*01_S4205	query_is_existing_sub	XGQN
+IGHV3-100*01_S4375	query_is_existing_sub	RTK4
+IGHV3-100*02_S9884	query_is_new_sub	MATZ
+
+
+
+CDB4 is kimdb IGHV3-100*02_S9884 with additional GGTG at 5' and AG at 3'. Now marked as don't include in rhesus_consolidated, with a comment in notes
+>IGHV3-100*02_S9884
+    GTGGAGCAGCTGGTGGAGTCTGGGGGAGGCTTGGTCCAGCCTGGCGGGTCCCTGAGACTCTCCTGTGCAGCCTCTGAATTCACCTTCAGTAGCTATGACATGCACTGGGTTCGCCAGGCTCCAGGGAAGGGTCTGGAGTGGGTATCAGCTATTAGCATTGGCGGTGGCACATACTACCCAGACTCTGTGAAGGGTCGATTCACCATCTCCAGAGACAATGCCAAGAACTCCTTGTATCTTCAAATGAACAGCCTGAGAGCTGAGGACACTGCTGTGTATTACTGTGCAAGAGA
+>CDB4
+GGTGGTGGTGCAGCTGGTGGAGTCTGAGGGAAATTTCGTGCAGCCTGGAGGGTCCCTGAGACTCTCCTGTGCAGTCTCTGGATTCACCTTTAGCAGCTGTGATTTGGACTGGATTCGCCATGCTCCAGGAAAGGGGCTGGAGTGGGTCTCTGGTATTAGTATTGCTGGTAGCACGTATTATGCAAACTCTGTAAACAGTCTATTCGCCATCTCCAGAGACAATGCCAAGAACACACTGTATCTTCAAATGAACAGTCTGATAGCTGAGGACACAGCCATTTATTACTGTGTGAGTGAAG
+
+
+DCTO is  IMGT IGHV3-132*01_a39c_g164c_t309c with additional leader at 5'. no kimdb v1.1 match. 
+added subsequence without leader to db and rhesus_consolidated
+
+YXFU was in corey's paper and is IMGT IGHV3-18*02 (not in kimdb) - this was one of the Ps brought in from IMGT
+also in 3.185, but it is non-functional. mark as such. 3-18*01 also annotated by digger as non-functional donor splice.
+
+
+
+
+
+
+
+
+
+
+
+
+

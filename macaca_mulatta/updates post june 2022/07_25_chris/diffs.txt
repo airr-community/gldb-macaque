@@ -1,0 +1,54 @@
+python  D:\Research\gldb-macaque\python\compare_dbs.py ../06_13_william/rhesus_consolidated.csv rhesus_consolidated_20220725.csv
+
+db2: the same sequence is listed against multiple labels: IGHV-D56D, IGHV-2IKB_S5991
+db2: the same sequence is listed against multiple labels: IGHV-MLWG_S6096, IGHV-YGKZ
+db2: the same sequence is listed against multiple labels: IGHV-NL67_S7532, IGHV-KDRG
+db2: the same sequence is listed against multiple labels: IGHV-XPRU_S1090, IGHV-FVXJ
+
+seq in db1 with labels IGHV-B3XO is not in db2
+seq in db1 with labels IGHV-MATZ is not in db2
+seq in db2 with labels IGHV-B3XO is not in db1
+seq in db2 with labels IGHV-MATZ is not in db1
+
+
+seq in db2 with labels IGHV-2OLR_S2078 is not in db1
+seq in db2 with labels IGHV-3IPT_S7272 is not in db1
+seq in db2 with labels IGHV-3Y76_S3249 is not in db1
+seq in db2 with labels IGHV-5GWA_S6295 is not in db1
+seq in db2 with labels IGHV-77ET_S9194 is not in db1
+seq in db2 with labels IGHV-7WXH_S3442 is not in db1
+seq in db2 with labels IGHV-ASVQ_S3447 is not in db1
+seq in db2 with labels IGHV-BFAY_S0302 is not in db1
+seq in db2 with labels IGHV-BFAY_S2676 is not in db1
+seq in db2 with labels IGHV-BMFT_S5723 is not in db1
+seq in db2 with labels IGHV-BUQS_S8993 is not in db1
+seq in db2 with labels IGHV-CHJV_S6154 is not in db1
+seq in db2 with labels IGHV-DDKS_S8112 is not in db1
+seq in db2 with labels IGHV-DWUN_S4057 is not in db1
+seq in db2 with labels IGHV-E5SJ_S4361 is not in db1
+seq in db2 with labels IGHV-FF3N_S8333 is not in db1
+seq in db2 with labels IGHV-GGX7_S5374 is not in db1
+seq in db2 with labels IGHV-GHRC_S0507 is not in db1
+seq in db2 with labels IGHV-GYOS_S4415 is not in db1
+seq in db2 with labels IGHV-HFYN_S8108 is not in db1
+seq in db2 with labels IGHV-KXRE_S1720 is not in db1
+seq in db2 with labels IGHV-N2N7_S1772 is not in db1
+seq in db2 with labels IGHV-N2SB_S3436 is not in db1
+seq in db2 with labels IGHV-RVDS_S3036 is not in db1
+seq in db2 with labels IGHV-SSII_S0244 is not in db1
+seq in db2 with labels IGHV-U3ZN_S3734 is not in db1
+seq in db2 with labels IGHV-YIMD_S3142 is not in db1
+seq in db2 with labels IGHV-ZOW4_S9591 is not in db1
+seq in db2 with labels IGHV-43MS_S6114 is not in db1
+seq in db2 with labels IGHV-6EAA_S3568 is not in db1
+seq in db2 with labels IGHV-6EAA_S5252 is not in db1
+seq in db2 with labels IGHV-77VV_S7763 is not in db1
+seq in db2 with labels IGHV-7WXH_S8964 is not in db1
+seq in db2 with labels IGHV-DNCX_S1731 is not in db1
+seq in db2 with labels IGHV-FRRC_S2698 is not in db1
+seq in db2 with labels IGHV-FRRC_S7561 is not in db1
+seq in db2 with labels IGHV-HHZI_S3017 is not in db1
+seq in db2 with labels IGHV-IB4X_S8381 is not in db1
+seq in db2 with labels IGHV-JYZT_S8373 is not in db1
+seq in db2 with labels IGHV-T3SW_S0917 is not in db1
+seq in db2 with labels IGHV-ZVHA_S1780 is not in db1

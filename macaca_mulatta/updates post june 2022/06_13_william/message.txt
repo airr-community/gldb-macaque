@@ -1,0 +1,44 @@
+Dear All,
+
+Attached is a new version of rhesus_consolidated.csv which reflects the updates Chris provided in his mail below.
+
+Chris’s file omitted sequences that were rejected for reasons outlined in the summary he sent. I’ve elected to keep all sequences recorded in the label database in this file, and have instead marked the sequences Chris retained by adding a new column ‘include_in_set’, putting a Y in the column where the V- sequence was retained in Chris’s file. This just works a bit better with the scripts I have written, really, but may also make it easier to keep track of things as we make further judgements. I have added columns for the additional data that Chris added, for example expression data, and created labels for the IMGT and kimdb v1.1 sequences. 
+
+There are two labels that are duplicated in the sequences marked as ‘include_in_set’, where the same sequence is duplicated with variations at one end. The labels are IGHV-XGQN and IGHV-XDFV. IGHV-XGQN is present in two variants, one of which has an additional 6 bases at the 5’ end. IGHV-XDFV is present in two variants, one of which has two additional bases at the 3’ end. These are listed as ‘duplicate label in set’ in the curation_notes field. There is a decent level of expression support for the longer variant of IGHV-XGQN. There’s no support in the repertoires for either variant of IGHV-XDFV.
+
+Chris, you asked whether we could add the family number to the label, so that the labels work better with tools. This has been bugging me for a while: apart from anything else, if we break peoples’ toolchains it will hurt adoption. One possibility, which I quite like, is to create a ‘legacy compatible’ name by using family number 0 and allele number 00, e.g. IGHV0-XGQN*00. This makes it clear that no family number or allele number has been assigned. If family numbers or allele numbers do later get assigned, they can replace the zeroes. 
+
+IgBLAST, luckily, seems to run ok with the labels as they stand. One possibility would be to write a tool which used the json-based germline set to add columns to an airr-seq annotation created by IgBLAST or Changeo. It could add columns for family name, gene number, allele number, where these are defined. It could also create the ‘legacy compatible’ name. It would be easy to write and would hopefully give people compatibility with existing tools. Something for discussion, anyway.
+
+Look forward to talking on Wednesday. Please let me know if you spot any problems in the file. The github repo is up-to-date at airr-community/gldb-macaque
+
+All the best
+
+William
+
+From: Christopher Cottrell <cchris@scripps.edu> 
+Sent: 13 May 2022 00:37
+To: William Lees <william@lees.org.uk>
+Cc: Gur Yaari <gur.yaari@biu.ac.il>; victor.greiff@medisin.uio.no; lonnekes@student.matnat.uio.no; christian.busse@dkfz-heidelberg.de; k.jackson@garvan.org.au; mats.ohlin@immun.lth.se; ivana.mikocziova@medisin.uio.no; Kos, Justin <justin.kos@louisville.edu>; breden@sfu.ca; a.collins@unsw.edu.au; amikt.gilboa@biu.ac.il; sofia.kossida@igh.cnrs.fr; veronique.giudicelli@igh.cnrs.fr; chaim.schramm@nih.gov; aupadh4@emory.edu; steven.bosinger@emory.edu; martin.corcoran@ki.se; Gibson, William <will.gibson@louisville.edu>; Upadhyay, Amit A. <amit.anil.upadhyay@emory.edu>; gyaari@gmail.com; Smith,Melissa Laird <ml.smith@louisville.edu>; Jana,Uddalok <uddalok.jana@louisville.edu>; Saha,Swati <swati.saha@louisville.edu>; Rodriguez,Oscar <oscar.rodriguez.1@louisville.edu>; Gunilla Karlsson Hedestam <gunilla.karlsson.hedestam@ki.se>
+Subject: Re: Rhesus Macaque GLDB
+
+Hello All,
+
+Attached are the updated rhesus_consolidated database and an updated summary slide after adding the additional 75 datasets from Zhang et al 2019. 
+
+total_VDJs = number of times that gene/allele was detected across all the datasets
+dataset_count = number of datasets a gene/allele was detected in
+
+There are 56 genes/alleles that have no expression data. This decreased slightly from the 64 genes/alleles that were lacking expression data before adding the 75 datasets from Zhang et al 2019 indicating that as more data is added some of these may turn out to be functional. 
+
+Please let me know if you have any questions.
+
+
+William, 
+
+The added IMGT sequences were given unique IDs spanning 1000 through 1035 and the added KIMDBv1.1 sequences were given unique IDs spanning 2002 through 2013.
+
+Would it be possible to incorporate the gene family number in the temp labels (e.g. IGHV-CDB4 to IGHV3-CDB4)? Some tools require the gene family number. 
+
+Best,
+Chris
