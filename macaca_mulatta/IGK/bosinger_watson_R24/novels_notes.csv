@@ -1,0 +1,21 @@
+novel,novel in AIRR-seq,novel in genomic,sub_or_super,sub/super in AIRR-seq,sub/super in genomic
+IGKV1-2WKU*01_c119a,1,1,super,0,0
+IGKV1-2WKU*01_C53A_G72A_G75C_A82G_T155C_C216T_T314A_C324T_A328T_G329A,,,super,,
+IGKV1-2WKU*04_a171g,2,2,super,0,0
+IGKV1-2WKU*07_335c335,8,8,super,0,0
+IGKV1-7OW5*10_333tcc335,4,4,super,0,0
+IGKV1-B6M4*07_t231c,1,1,super,0,0
+IGKV1-BHT5*08_g169t,36,37,super,0,0
+IGKV1-HJDQ*01_g166t_c167a,2,2,super,0,0
+IGKV1-HJDQ*09_c146t,1,1,super,,
+IGKV1-LK5T*03_333tcc335,1,1,super,0,0
+IGKV10-B432*01_g1-_g2-_g3-,0,3,new_sub,0,0
+IGKV19-E7WP*01_335a335,13,13,super,0,0
+IGKV19-EDGP*05_334cc335,18,18,super,0,0
+IGKV19-EDGP*06_334cc335,2,2,super,0,0
+IGKV19-FMAS*01_c258g,2,2,super,0,0
+IGKV8-5WB2*03_333tcc335,8,8,super,0,0
+IGKV8-7TR6*05_327gctccct333,3,3,super,0,0
+IGKV8-EOM2*02_335c335,2,2,super,0,0
+IGKV8-QNWI*01_330gcctcc335,2,2,super,0,0
+IGKV8-RQVU*03_a54g_a103g_a330g_c331t_337ccc339,0,5,super,0,0

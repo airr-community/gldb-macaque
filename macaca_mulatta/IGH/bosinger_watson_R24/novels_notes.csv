@@ -1,0 +1,16 @@
+novel,novel in AIRR-seq,novel in genomic,sub_or_super,sub/super in AIRR-seq,sub/super in genomic
+IGHV13-PSOC*02_a2t_t66c_g242a_c243a,30,49,existing_sub,,
+IGHV3-A7N6*03_t10c_a103g_c246t_t288c_a317g_c321-_a322-,3,3,new_sub,,
+IGHV3-DY3H*03_g13a_g15t_21caca24_g26a_a27g_g32a_t34c_g37a_t38g_g42a_g49a_g50a_t52c_c53t_c71t_t78c_g79a_c84t_a85g_t89g_a109t_c110t_a112t_g114a_g117t_a119g_t121c_g123a_c126t_g128a_a129c_g133t_a138c_g144a_a145g_g151c_g156a_159aata162_a164g_c165t_g171a_g190c_a194t_a197g_t199c_t203g_c209a_c223a_a229t_g239a_a240g_c249t_c258g_c261g_c276t_c279t_c296t_a297g_301--------------------320,0,39,new_sub,,
+IGHV3-PHO7*03_g3c_g4a_g22t_g23t_g31a_g37t_a39g_c40t_g50c_g51a_c55g_c63t_t67c_g68t_c90t_a103t_c108g_t118a_a119g_g128a_g144a_g155a_c163t_g164t_a166t_t168g_g175a_a176g_g186a_a187g_t189c_c201t_a204g_c210t_c222t_g224c_g243t_a244g_c246t_c255a_g267a_a271g_t279c_t280c_c294t_c296g_a297t_g301a_307--------------320,0,9,new_sub,,
+IGHV3-PJYR*01_c1g_g13a_t14c_g15t_21caca24_g26a_a27g_g32a_g34c_g37a_t38g_c39a_g42a_g50a_c53t_g68a_c71t_t78c_g79a_a85g_t89g_a110t_t111c_g112t_c114a_g117t_c118a_a119g_t121c_g123a_c126t_g128a_g133t_c141g_g155a_g156a_g159a_g160a_c161t_t164g_t169a_c170a_a190c_t192c_a194t_t196c_t199c_c210t_g211c_c223a_g239a_t247g_c249t_a256t_c279t_t281a_g284t_296t------------------------320,0,69,new_sub,,
+IGHV4-64DR*06_i0cagctg,14,14,super,41,44
+IGHV4-7UKP*03_g300c,4,5,super,,
+IGHV4-HDAZ*03_c319-_a320-,0,4,new_sub,5,5
+IGHV4-MLR2*11_g319-_a320-,0,1,new_sub,55,55
+IGHV4-ZNL3*03_c319-_a320-,1,1,new_sub,0,0
+IGHV5-T2J5*01_297---------------------------------------335,0,52,new_sub,,
+IGHV5-T2J5*01_t19c_297---------------------------------------335,0,34,new_sub,,
+IGHV5-T2J5*02_297---------------------------------------335,0,15,new_sub,,
+IGHV8-4SV6*09_a317-_a318-,2,40,existing_sub,43,43
+IGHV8-4SV6*09_a318-,0,1,new_sub,43,43
